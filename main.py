@@ -16,8 +16,8 @@ product_dictionary = {
 
 @app.route('/')
 def hello():
-    return render_template("home.html")
-
+    # return render_template("home.html")
+    return 'Hello World!'
 
 @app.route('/server/api/<action>', methods=['GET'])
 def apiget(action):
