@@ -2,6 +2,17 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
+customer_dictionary = {
+    "customer_name": "Nikolas Barkeeper",
+    "customer_age": 20,
+}
+
+product_dictionary = {
+    "product_title": "Shaker",
+    "product_description": "shake your cocktails",
+    "product_amount": 2
+}
+
 
 @app.route('/')
 def hello():
@@ -47,15 +58,4 @@ def apipost():
 
 
 if __name__ == '__main__':
-    customer_dictionary = {
-        "customer_name": "Nikolas Barkeeper",
-        "customer_age": 20,
-    }
-
-    product_dictionary = {
-        "product_title": "Shaker",
-        "product_description": "shake your cocktails",
-        "product_amount": 2
-    }
-
     app.run()
