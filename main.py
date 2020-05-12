@@ -46,16 +46,16 @@ def apipost():
         return redirect(url_for('apiget', action="all"))
 
 
-# if __name__ == '__main__':
-customer_dictionary = {
-    "customer_name": "Nikolas Barkeeper",
-    "customer_age": 20,
-}
+if __name__ == '__main__':
+    customer_dictionary = {
+        "customer_name": "Nikolas Barkeeper",
+        "customer_age": 20,
+    }
 
-product_dictionary = {
-    "product_title": "Shaker",
-    "product_description": "shake your cocktails",
-    "product_amount": 2
-}
+    product_dictionary = {
+        "product_title": "Shaker",
+        "product_description": "shake your cocktails",
+        "product_amount": 2
+    }
 
-app.run()
+    app.run()
